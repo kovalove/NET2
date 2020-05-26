@@ -1,0 +1,31 @@
+﻿@model StudentModel
+@{
+    ViewData["Title"] = "Student marks";
+}
+
+<br />
+<a asp-controller="Student" asp-action="Index">Back</a>
+<br />
+
+
+
+<h2>@Model.Name @Model.Surname</h2>
+<h3>Class: @Model.StudyClass</h3>
+<br />
+
+
+<table class="table table-striped">
+    <tr>
+        <th>Subject</th>
+        <th>Mark</th>
+    </tr>
+
+
+    @foreach (var mark in Model.Marks)
+    {
+        <tr>
+            <td>@mark.Subject</td>
+            <td>@mark.Mark</td>
+        </tr>
+    }
+</table>

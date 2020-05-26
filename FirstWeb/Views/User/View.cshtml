@@ -1,0 +1,21 @@
+﻿@model UserModel
+@{
+    ViewData["Title"] = "User view";
+}
+
+<h2>View</h2>
+
+<br />
+<a asp-controller="User" asp-action="Index">Back</a>
+<br />
+<br />
+
+<div>
+    Name: @Model.Name
+</div>
+<div>
+    Email: @Model.Email
+</div>
+<div>
+    Phone: @Model.Phone
+</div>

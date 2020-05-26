@@ -1,0 +1,31 @@
+﻿@model List<ItemModel>
+@{
+    ViewData["Title"] = "MyCart";
+}
+
+@if (Model.Count == 0)
+{
+    <h3>Your cart is empty!</h3>
+}
+else
+{
+    <table class="table table-striped">
+        <tr>
+            <th>Item name</th>
+            <th>Item price</th>
+            <th></th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Price</td>
+                <td>
+                    <form asp-controller="Account" asp-action="MyCartDelete" asp-route-id="@item.Id" method="post">
+                        <input type="submit" value="Delete" class="btn btn-danger"/>
+                    </form>
+                </td>
+            </tr>
+        }
+    </table>
+}

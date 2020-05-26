@@ -1,0 +1,20 @@
+﻿@model List<string>
+@{
+    ViewData["Title"] = "Depatment list";
+}
+
+<h2>All departments</h2>
+
+
+<table class="table table-striped">
+    <tr>
+        <th>Department</th>
+    </tr>
+
+    @foreach (var department in Model)
+    {
+        <tr>
+            <td>@department</td>
+        </tr>
+    }
+</table>

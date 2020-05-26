@@ -1,0 +1,18 @@
+﻿@model CategoryItemsModel
+@{
+    ViewData["Title"] = "Category view";
+}
+
+<h2>View</h2>
+
+<div>
+    Name: @Model.Category.Name
+
+    @foreach (var item in Model.Items)
+    {
+        <tr>
+            <td>@item.Name</td>
+        </tr>
+    }
+</div>
+
