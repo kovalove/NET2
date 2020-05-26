@@ -3,7 +3,7 @@ using ESchool.Models;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ESchool.Extensions
+namespace WebShop.Extensions
 {
     public static class StudySubjectExtensions
     {

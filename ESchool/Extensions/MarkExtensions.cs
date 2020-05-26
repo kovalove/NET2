@@ -1,7 +1,7 @@
 ﻿using ESchool.Logic.DB;
 using ESchool.Models;
 
-namespace ESchool.Extensions
+namespace WebShop.Extensions
 {
     public static class MarkExtensions
     {

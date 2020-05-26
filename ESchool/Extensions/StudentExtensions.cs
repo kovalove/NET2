@@ -2,7 +2,7 @@
 using ESchool.Models;
 using System.Collections.Generic;
 
-namespace ESchool.Extensions
+namespace WebShop.Extensions
 {
     public static class StudentExtensions
     {
